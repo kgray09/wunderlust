@@ -106,8 +106,7 @@ header p {
 }
 
 h1 {
-    /* font-family: var(--molleFont); */
-    font-family: 'Molle', cursive;
+    font-family: var(--molleFont);
     font-size: 3.125rem;
     font-weight: 400;
     padding: .5rem 2rem 0;
