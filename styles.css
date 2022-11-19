@@ -155,6 +155,7 @@ p, q, nav a, form {
 #menu-toggle label {
     background-color: var(--yellow);
     padding: 10px 60px;
+    font-weight: bold;
 }
 
 #menu-toggle input {
