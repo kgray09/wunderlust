@@ -49,10 +49,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* FONT */
-@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
-
 /* VARIABLES */
 
 :root {
@@ -111,27 +107,37 @@ header p {
 
 /* ---------HEADER STYLES-------- */
 h1 {
-    font-family: var(--molleFont);
-    font-size: 2.5rem;
-    text-align: left;
+    /* font-family: var(--molleFont); */
+    font-family: 'Molle', cursive;
+    font-size: 3.125rem;
+    font-weight: 400;
     padding: .5rem 2rem 0;
+    font-style: italic;
 }
 
 h2 {
     font-family: var(--molleFont);
-    font-size: 2.2rem;
+    font-size: 2.81rem;
+    font-weight: 400;
+    font-style: italic;
 }
 
 h3 {
     font-family: var(--molleFont);
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
 }
 
 h4 {
-    font-weight: bold;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
+}
+
+p, q, nav a, form {
+    font-family: var(--monsterratFont);
 }
 
 /* NAVIGATION */
@@ -172,6 +178,7 @@ h4 {
 #menu-toggle li{
     height: 10vh;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     border-bottom: solid var(--black) 1px;
@@ -348,6 +355,7 @@ h4 {
 #contact input, #contact select {
     border: var(--purple) solid 2px;
     color: var(--darkGray);
+    background-color: transparent;
 }
 
 #contact form {
@@ -361,8 +369,10 @@ h4 {
 }
 
 #contact form input, #contact select{
-    height: 6vh;
+    height: 5vh;
+    border-radius: 0px;
 }
+
 
 label span.required {
     color: red;
@@ -379,16 +389,11 @@ label span.required {
     margin: 0 0 4px 2px;
     width: 40px;
     height: 40px;
-    margin: 0;
 }
 
 #contact span.radio-input{
-    margin: 0;
-    outline: 1px solid var(--purple);
     width: 40px;
     height: 40px;
-    position: relative;
-    border-radius: 35px;
 }
 
 span.radio-label {
@@ -438,7 +443,7 @@ footer a {
     /* Header */
     header {
         display: grid;
-        grid-template-columns: 30vw 1fr;
+        grid-template-columns: 22vw 1fr;
         grid-template-rows: repeat(2, auto);
     }
 
@@ -457,13 +462,13 @@ footer a {
     header h1 {
         position: relative;
         font-size: 4rem;
-        top: 4.5vh;
+        top: 8.5vh;
     }
     
     header p {
         font-size: 1.3rem;
         position: relative;
-        top: 13vh;
+        top: 17vh;
         max-width: 80%;
     } 
 
@@ -484,13 +489,14 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
-        width: 60vw;
+        width: 83vw;
         background-color: transparent;
     }
 
     #menu-toggle li {
         background-color: var(--lightGray);
         height: 7vh;
+        /* width: 100%; */
         font-weight: bold;
         border: none;
     }
@@ -587,7 +593,7 @@ footer a {
         margin-left: 5vw;
     }
     #contact form input {
-        height: 8vh;
+        height: 4vh;
     }
     fieldset {
         display: flex;
@@ -603,8 +609,9 @@ footer a {
         margin-bottom: 10px;
     }
     #contact form input, #contact select {
-        height: 8vh;
+        height: 6vh;
         }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -705,7 +712,7 @@ footer a {
     min-width: 100%;
    }
    #contact form input, #contact select {
-    height: 8vh;
+    height: 5vh;
     }
 
    #contact form {
