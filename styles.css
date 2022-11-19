@@ -102,7 +102,7 @@ header p {
 
 #logo img{
     padding-top: 5vw;
-    width: 50vw;
+    max-width: 50vw;
 }
 
 /* ---------HEADER STYLES-------- */
@@ -444,13 +444,13 @@ footer a {
     /* Header */
     header {
         display: grid;
-        grid-template-columns: 22vw 1fr;
+        grid-template-columns: 20vw 1fr;
         grid-template-rows: repeat(2, auto);
     }
 
     #logo img{
         grid: 1 3 / 1 2;
-        width: 30vw;
+        max-width: 30vw;
         align-items: center;
     }
 
@@ -469,7 +469,8 @@ footer a {
     header p {
         font-size: 1.3rem;
         position: relative;
-        top: 17vh;
+        top: 50%;
+        padding-top: 20px;
         max-width: 80%;
     } 
 
@@ -496,7 +497,7 @@ footer a {
 
     #menu-toggle li {
         background-color: var(--lightGray);
-        height: 7vh;
+        height: 8vh;
         /* width: 100%; */
         font-weight: bold;
         border: none;
@@ -640,10 +641,11 @@ footer a {
     top: 8vh;
    }
    header p{
-    top: 15vh;
+    padding-top: 10px;
+    top: 16vh;
    }
    #logo img {
-    padding-top: 1vw;
+    padding-top: 7vh;
     max-width: 20vw;
     max-height: 10;
    }
